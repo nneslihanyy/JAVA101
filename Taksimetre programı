@@ -1,0 +1,21 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[]args){
+       Scanner scanner= new Scanner(System.in);
+      double gidilenkm,tutarkmbas,odenecektutar,mintutar;
+
+        System.out.println("Gideceğiniz km miktarını giriniz:");
+        gidilenkm=scanner.nextDouble();
+        mintutar=10;
+        tutarkmbas=gidilenkm*2.20;
+        odenecektutar=tutarkmbas+mintutar;
+        System.out.println("Taksimetre açılış ücreti 10 Türk Lirasıdır");
+        if (odenecektutar<=20){
+            System.out.println("Ödeyeceğiniz tutar 20 Türk Lirasıdır.");
+        }
+        else {
+            System.out.println("Ödeyeceğiniz tutar: "+odenecektutar);
+        }
+        }
+    }
