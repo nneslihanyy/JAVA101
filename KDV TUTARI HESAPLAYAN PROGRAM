@@ -1,0 +1,21 @@
+
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[]args){
+       Scanner scanner= new Scanner(System.in);
+      double kdvsiz,kdv1=0.18,kdv2=0.08,kdvtutar,kdvli;
+        System.out.println("Tutarı giriniz:");
+        kdvsiz= scanner.nextDouble();
+        if (kdvsiz>=0 && kdvsiz<1000){
+            kdvtutar=kdvsiz*kdv1;
+            kdvli=kdvtutar+kdvsiz;
+            System.out.println("KDV'li tutar "+kdvli);
+        }
+        else{
+            kdvtutar=kdvsiz*kdv2;
+            kdvli=kdvtutar+kdvsiz;
+            System.out.println("KDV'li tutar "+kdvli);
+        }
+    }
+}
