@@ -1,0 +1,18 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[]args){
+       Scanner scanner= new Scanner(System.in);
+      double kenar1,kenar2,kenar3,ucgencevre,alan,u;
+        System.out.println("1. Kenar uzunluğunu giriniz: ");
+        kenar1= scanner.nextDouble();
+        System.out.println("2. Kenar uzunluğunu giriniz: ");
+        kenar2= scanner.nextDouble();
+        System.out.println("3. Kenar uzunluğunu giriniz: ");
+        kenar3= scanner.nextDouble();
+      ucgencevre=((2*(kenar1+kenar2+kenar3))/3);
+      u=(kenar1+kenar2+kenar3)/2;
+        alan=Math.sqrt(u*(u-kenar1)*(u-kenar2)*(u-kenar3));
+        System.out.println("Alan= "+alan);
+        }
+    }
