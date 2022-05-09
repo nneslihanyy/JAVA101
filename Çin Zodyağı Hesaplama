@@ -28,22 +28,25 @@ public class Main {
             case 5:
                 System.out.println("Çin Zodyağı Burcunuz : Fare");
                 break;
-            case 6:
-                System.out.println("Çin Zodyağı Burcunuz : Kaplan");
+                case 6:
+                System.out.println("Çin Zodyağı Burcunuz : Öküz");
                 break;
             case 7:
-                System.out.println("Çin Zodyağı Burcunuz : Tavşan");
+                System.out.println("Çin Zodyağı Burcunuz : Kaplan");
                 break;
             case 8:
-                System.out.println("Çin Zodyağı Burcunuz : Ejderha");
+                System.out.println("Çin Zodyağı Burcunuz : Tavşan");
                 break;
             case 9:
-                System.out.println("Çin Zodyağı Burcunuz : Yılan");
+                System.out.println("Çin Zodyağı Burcunuz : Ejderha");
                 break;
             case 10:
-                System.out.println("Çin Zodyağı Burcunuz : At");
+                System.out.println("Çin Zodyağı Burcunuz : Yılan");
                 break;
             case 11:
+                System.out.println("Çin Zodyağı Burcunuz : At");
+                break;
+            case 12:
                 System.out.println("Çin Zodyağı Burcunuz : Koyun");
                 break;
         }
