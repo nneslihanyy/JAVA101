@@ -20,7 +20,7 @@ public class Main {
             if (sicaklik<=15){
                 System.out.println("Sinemaya gidebilirsin.");
             }
-            if (sicaklik>=10) {
+            if (sicaklik>=15) {
                 System.out.print("Pikniğe gidebilirsin");
             }
 
