@@ -1,0 +1,48 @@
+package com.company;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[]args){
+       int mat,muzik,fizik,turkce,kimya,toplam=0;
+        Scanner scanner = new Scanner(System.in);
+        double ortalama;
+
+        System.out.println("Matematik notunuzu giriniz : ");
+        mat = scanner.nextInt();
+        if (mat <= 100 && mat >= 0)
+            toplam += mat;
+        System.out.println("Fizik notunuzu giriniz : ");
+        fizik = scanner.nextInt();
+        if (fizik <= 100 && fizik >= 0)
+            toplam += fizik;
+        System.out.println("Kimya notunuzu giriniz : ");
+        kimya = scanner.nextInt();
+        if (kimya <= 100 && kimya >= 0)
+            toplam += kimya;
+        System.out.println("Türkçe notunuzu giriniz : ");
+        turkce = scanner.nextInt();
+        if (turkce <= 100 && turkce >= 0)
+            toplam += turkce;
+        System.out.println("Müzik notunuzu giriniz : ");
+        muzik = scanner.nextInt();
+        if (muzik <= 100 && muzik >= 0)
+            toplam += muzik;
+
+        ortalama = toplam / 5;
+        System.out.println("Ortalamanız : " + ortalama);
+
+        if(ortalama >=55 ) {
+            System.out.println("Sınıfı geçtiniz.");
+        }else {
+            System.out.println("Sınıfta Kaldınız.");
+        }
+
+    }
+
+    }
+
+
+
