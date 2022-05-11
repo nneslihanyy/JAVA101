@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class donguodev2 {
+    public static void main(String[] args) {
+        int giris;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Sayı giriniz:");
+        giris= scanner.nextInt();
+        for (int i=1;i<=giris;i*=2){
+            System.out.println(i);
+        }
+    }
+}
