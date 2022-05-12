@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class donguodev5 {
+    public static void main(String[] args) {
+        int pay,payda,faktoriyel1=1,faktoriyel2=1,faktoriyel3=1;
+        Scanner scanner=new Scanner(System.in);
+
+        System.out.println("Payı giriniz:");
+        pay=scanner.nextInt();
+        System.out.println("Payda giriniz:");
+        payda= scanner.nextInt();
+
+        for (int i=1; i<=pay ; i++){
+            faktoriyel1=faktoriyel1*i;
+        }
+        for (int j=1; j<=payda;j++){
+            faktoriyel2=faktoriyel2*j;
+        }
+        for (int k=1;k<=(pay-payda);k++){
+            faktoriyel3=faktoriyel3*k;
+        }
+        System.out.println("Kombinasyon:"+(faktoriyel1/(faktoriyel2*faktoriyel3)));
+    }
+}
