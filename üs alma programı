@@ -1,0 +1,16 @@
+package com.company;
+import java.util.Scanner;
+public class donguodev6 {
+    public static void main(String[] args) {
+        int taban,us,sonuc=1;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Taban olacak sayıyı giriniz:");
+        taban=scanner.nextInt();
+        System.out.println("Üs olacak sayıyı giriniz:");
+        us=scanner.nextInt();
+       for (;us!=0;--us){
+           sonuc=sonuc*taban;
+       }
+        System.out.println("Sonuç:  "+sonuc);
+    }
+    }
