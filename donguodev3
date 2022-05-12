@@ -1,0 +1,17 @@
+//Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden çift ve 4'ün katları olan sayıları toplayıp ekrana basan programı yazıyoruz.
+import java.util.Scanner;
+public class donguodev4 {
+    public static void main(String[] args) {
+        int i, toplam = 0;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("Sayı giriniz:");
+            i = scanner.nextInt();
+            if (i % 4 == 0 && i % 2 == 0) {
+                toplam = toplam + i;
+            }
+        }
+        while (i%2!=1) ;
+        System.out.println(toplam);
+        }
+    }
