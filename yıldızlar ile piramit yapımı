@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class donguodev7
+{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Basamak sayısını giriniz:");
+        int n=scanner.nextInt();
+        //n basamak sayısı
+        for (int i = 1; i <= n ; i++) {
+            //(n-i) soldan sağa bakılırkenki ilk boşluk için
+            for (int j = 1; j < (n - i); j++) {
+                System.out.print(" ");
+            }
+            //boşluğun ardından bastırılacak yıldız sayısı
+            for (int k = 1; k <= (2 * i) - 1; k++) {
+                System.out.print("*");
+            }
+            //sağ tarafta kalan boşluklar için
+            System.out.println(" ");
+        }
+
+    }
+}
